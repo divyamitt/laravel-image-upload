@@ -51,7 +51,7 @@ class ImageController extends Controller
                 $img = Image::make($thumbnailpath)->resize(800, 800)->save($thumbnailpath);
             }
     
-            return redirect('image')->with('success', "Resize Image(s) uploaded successfully on path laravel/storage/app/public/images/resize");
+            return redirect('image')->with('success', "Resize Image(s) uploaded successfully on path storage/app/public/images/resize");
         }
     }
 }
